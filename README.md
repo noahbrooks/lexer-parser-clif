@@ -12,8 +12,6 @@ digit = ’0’ | ’1’ | ’2’ | ’3’ | ’4’ | ’5’ | ’6’ | �
 open = ’(’
 close = ’)’
 white = U+0020 | U+0009 | U+000A | U+000B | U+000C | U+000D
-# white encodes any whitespace or other break (newline, pagebreak, carriage return, etc.)
-# don’t worry about whitespaces; they are already taken care of in the provided lexer
 numeral = digit { digit }
 reservedelement = ’and’ | ’or’ | ’iff’ | ’if’ | ’not’ | ’cl:comment’
 stringquote = ’’’
